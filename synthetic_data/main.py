@@ -14,7 +14,7 @@ SNOMED_UNITS = {
     "qualitative": {"code": "370125004", "display": "Qualitative (qualifier value)"}
 }
 
-# SNOMED countries (some example codes)
+# SNOMED countries (examples)
 SNOMED_COUNTRIES = [
     {"code": "223369002", "display": "Spain"},
     {"code": "22335008", "display": "United States of America"},
@@ -58,7 +58,7 @@ GENETIC_VARIANTS = [
     {
         "hgvs": "NM_000123.4:c.345G>A",
         "label": "ExampleVariant1",
-        "url": "https://www.ncbi.nlm.nih.gov/clinvar/RCV000000001/"  # example ClinVar URL
+        "url": "https://www.ncbi.nlm.nih.gov/clinvar/RCV000000001/"
     },
     {
         "hgvs": "NM_000456.3:c.789T>C",
@@ -98,15 +98,12 @@ def generate_patient(pid, now):
     patient["first_visit_date"] = fv.date().isoformat()
 
     # Examination (height / weight)
-    # pick an age at exam between 1 and ~60 years after birth
     age_years = random.randint(1, 60)
     exam_dt = dob + timedelta(days=365 * age_years)
     if exam_dt > now:
         exam_dt = now
     patient["exam_date"] = exam_dt.date().isoformat()
 
-    # height & weight
-    # simple normal distributions
     height = round(random.normalvariate(170, 10), 1)
     weight = round(random.normalvariate(70, 15), 1)
     patient["height_value"] = height
@@ -136,16 +133,12 @@ def generate_patient(pid, now):
         patient["symptom_onset_date"] = None
         patient["symptom_note"] = None
 
-    # Laboratory / genetic test
-    # We include both a “lab test” (creatinine) and optionally a genetic test
-    # Lab: creatinine measurement, serum (SNOMED code 113075003)
-    # Note: from BioPortal, “Creatinine measurement, serum” = SNOMED CT 113075003 :contentReference[oaicite:1]{index=1}
+    # Laboratory test (Creatinine)
     lab_dt = random_date(exam_dt, now)
     patient["lab_date"] = lab_dt.date().isoformat()
     patient["lab_process_code"] = "113075003"
     patient["lab_process_display"] = "Creatinine measurement, serum"
     patient["molecular_target"] = "CREATININE"
-    # value: example µmol/L
     patient["lab_value"] = round(random.uniform(60, 150), 2)
     patient["lab_unit_code"] = SNOMED_UNITS["µmol/L"]["code"]
     patient["lab_unit_display"] = SNOMED_UNITS["µmol/L"]["display"]
@@ -172,7 +165,7 @@ def generate_patient(pid, now):
         patient["diagnosis_display"] = None
         patient["diagnosis_date"] = None
 
-    # Surgery (optional, if diagnosis)
+    # Surgery (optional)
     if patient["diagnosis_code"] and random.random() < 0.3:
         proc = random.choice(SNOMED_PROCEDURES)
         struct = random.choice(SNOMED_STRUCTURES)
@@ -199,7 +192,30 @@ def generate_patients(n=10, seed=RNG_SEED):
     df = pd.DataFrame(pat_list)
     return df
 
+def extract_height_table(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    From the full synthetic patients DataFrame, extract a new table
+    with columns: pid, date, value, unit (height).
+    """
+    height_df = df[["patient_id", "exam_date", "height_value", "height_unit_display"]].copy()
+    height_df.rename(
+        columns={
+            "patient_id": "pid",
+            "exam_date": "date",
+            "height_value": "value",
+            "height_unit_display": "unit",
+        },
+        inplace=True,
+    )
+    return height_df
+
 if __name__ == "__main__":
-    df = generate_patients(n=20)
-    print(df.to_string(index=False))
-    df.to_csv("synthetic.csv", index=False)
+    # Generate full synthetic patient dataset
+    df = generate_patients(n=10)
+    print("Full synthetic dataset:\n", df.head(), "\n")
+    df.to_csv("synthetic_patients_genetic.csv", index=False)
+
+    # Extract height-only dataset
+    height_table = extract_height_table(df)
+    print("Height table:\n", height_table.head(), "\n")
+    height_table.to_csv("synthetic_patients_height.csv", index=False)
