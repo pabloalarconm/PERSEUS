@@ -1,0 +1,73 @@
+<http://example.com/202512161507563324860_Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001013> .
+<http://example.com/202512161507563324860_Enddate> <http://semanticscience.org/resource/SIO_000300> "1993-12-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.com/202512161507563324860_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032> .
+<http://example.com/202512161507563324860_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype enddate: 1993-12-25" .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000068> <http://example.com/50012001_6485754522_Event> .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000068> <http://example.com/50012001_Medical_history> .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000253> <http://example.com/50012001_202512161507563324860_Organisation> .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000300> "202512161507563324860" .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000680> <http://example.com/202512161507563324860_Startdate> .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000681> <http://example.com/202512161507563324860_Enddate> .
+<http://example.com/202512161507563324860_Record> <http://semanticscience.org/resource/SIO_000687> <http://example.com/202512161507563324860_Age> .
+<http://example.com/202512161507563324860_Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001027> .
+<http://example.com/202512161507563324860_Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/CARE-SM/#Phenotype> .
+<http://example.com/202512161507563324860_Record> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype" .
+<http://example.com/202512161507563324860_Startdate> <http://semanticscience.org/resource/SIO_000300> "1993-12-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.com/202512161507563324860_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031> .
+<http://example.com/202512161507563324860_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype startdate: 1993-12-25" .
+<http://example.com/50012001_202512161507563324860_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype attribute" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Causality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Causality> <http://www.w3.org/2000/01/rdf-schema#label> "Cause of Phenotype" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001367> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype frequency specification" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype input" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000012> .
+<http://example.com/50012001_202512161507563324860_Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "organisation where this data element was defined" .
+<http://example.com/50012001_202512161507563324860_Output> <http://semanticscience.org/resource/SIO_000221> <http://example.com/50012001_202512161507563324860_Unit> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://semanticscience.org/resource/SIO_000243> <http://example.com/50012001_202512161507563324860_Causality> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.com/50012001_202512161507563324860_Attribute> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://semanticscience.org/resource/SIO_000671> <http://purl.obolibrary.org/obo/HP_0000790> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C16977> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype output" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000028> <http://example.com/50012001_202512161507563324860_Specific_method> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.com/50012001_202512161507563324860_Output> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.com/50012001_202512161507563324860_Input> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000291> <http://example.com/50012001_202512161507563324860_Target> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000339> <http://example.com/50012001_202512161507563324860_Protocol> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://semanticscience.org/resource/SIO_000900> <http://example.com/50012001_202512161507563324860_Frequency> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C18020> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype procedure" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000272> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000090> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype protocol" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.com/50012001_202512161507563324860_Process> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Patient role" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Specific_method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Target> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype target" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000074> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_202512161507563324860_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype unit of measurement" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_6485754522_Event> <http://semanticscience.org/resource/SIO_000300> "6485754522" .
+<http://example.com/50012001_6485754522_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000088> .
+<http://example.com/50012001_Identifier> <http://semanticscience.org/resource/SIO_000020> <http://example.com/50012001_202512161507563324860_Role> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Identifier> <http://semanticscience.org/resource/SIO_000300> "50012001" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Individual> <http://semanticscience.org/resource/SIO_000228> <http://example.com/50012001_202512161507563324860_Role> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498> <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Individual> <http://www.w3.org/2000/01/rdf-schema#label> "Subject" <http://example.com/202512161507563324860_Record> .
+<http://example.com/50012001_Medical_history> <http://semanticscience.org/resource/SIO_000332> <http://example.com/50012001_Person> .
+<http://example.com/50012001_Medical_history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010673> .
+<http://example.com/50012001_Person> <http://semanticscience.org/resource/SIO_000671> <http://example.com/50012001_Person_identifier> .
+<http://example.com/50012001_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498> .
+<http://example.com/50012001_Person_identifier> <http://semanticscience.org/resource/SIO_000300> "50012001" .
+<http://example.com/50012001_Person_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> .
+<http://purl.obolibrary.org/obo/HP_0000790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C164535> <http://example.com/202512161507563324860_Record> .
+<http://purl.obolibrary.org/obo/HP_0000790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> <http://example.com/202512161507563324860_Record> .
+<http://purl.obolibrary.org/obo/HP_0000790> <http://www.w3.org/2000/01/rdf-schema#label> "Phenotype output identifier" <http://example.com/202512161507563324860_Record> .

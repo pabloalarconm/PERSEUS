@@ -9,60 +9,60 @@ EVENT_COUNTER = 1000000  # Start unique event IDs above 1 million
 
 # --- SNOMED annotations ---
 SNOMED_UNITS = {
-    "cm": {"code": "258672001", "display": "Centimeter (qualifier value)"},
-    "kg": {"code": "258683005", "display": "Kilogram (qualifier value)"},
-    "µmol/L": {"code": "258773002", "display": "Micromole per liter (qualifier value)"},
-    "presence": {"code": "410668003", "display": "Presence (qualifier value)"},
-    "qualitative": {"code": "370125004", "display": "Qualitative (qualifier value)"}
+    "cm": {"code": "http://snomed.info/id/258672001", "display": "Centimeter (qualifier value)"},
+    "kg": {"code": "http://snomed.info/id/258683005", "display": "Kilogram (qualifier value)"},
+    "µmol/L": {"code": "http://snomed.info/id/258773002", "display": "Micromole per liter (qualifier value)"},
+    "presence": {"code": "http://snomed.info/id/410668003", "display": "Presence (qualifier value)"},
+    "qualitative": {"code": "http://snomed.info/id/370125004", "display": "Qualitative (qualifier value)"}
 }
 
 SNOMED_COUNTRIES = [
-    {"code": "223369002", "display": "Spain"},
-    {"code": "22335008", "display": "United States of America"},
-    {"code": "223367000", "display": "United Kingdom"},
-    {"code": "223368005", "display": "France"},
-    {"code": "223366009", "display": "Germany"},
-    {"code": "223370001", "display": "Brazil"},
-    {"code": "223371002", "display": "Mexico"},
-    {"code": "223372009", "display": "India"},
-    {"code": "223373004", "display": "Nigeria"},
-    {"code": "223374005", "display": "China"},
+    {"code": "http://snomed.info/id/223369002", "display": "Spain"},
+    {"code": "http://snomed.info/id/22335008", "display": "United States of America"},
+    {"code": "http://snomed.info/id/223367000", "display": "United Kingdom"},
+    {"code": "http://snomed.info/id/223368005", "display": "France"},
+    {"code": "http://snomed.info/id/223366009", "display": "Germany"},
+    {"code": "http://snomed.info/id/223370001", "display": "Brazil"},
+    {"code": "http://snomed.info/id/223371002", "display": "Mexico"},
+    {"code": "http://snomed.info/id/223372009", "display": "India"},
+    {"code": "http://snomed.info/id/223373004", "display": "Nigeria"},
+    {"code": "http://snomed.info/id/223374005", "display": "China"},
 ]
 
 EXAM_CODES = {
-    "height":{"code": "248327008", "display": "Height"},
-    "weight":{"code": "107647005", "display": "Weight"}
+    "height":{"code": "http://snomed.info/id/248327008", "display": "Height"},
+    "weight":{"code": "http://snomed.info/id/107647005", "display": "Weight"}
 }
 
 SEX_CODES = [
-    {"code": "248153007", "display": "Male"},
-    {"code": "248152002", "display": "Female"}
+    {"code": "http://snomed.info/id/248153007", "display": "Male"},
+    {"code": "http://snomed.info/id/248152002", "display": "Female"}
 ]
 
 SNOMED_DIAGNOSES = [
-    {"code": "37183000", "display": "Cystinuria, type 1"},
-    {"code": "907460000", "display": "Polycystic kidney disease"},
-    {"code": "74400008", "display": "Appendicitis"},
-    {"code": "473392002", "display": "Hypertensive nephrosclerosis"},
-    {"code": "35455006", "display": "Acute tubular necrosis"},
-    {"code": "770414008", "display": "Alport syndrome"},
+    {"code": "http://snomed.info/id/37183000", "display": "Cystinuria, type 1"},
+    {"code": "http://snomed.info/id/907460000", "display": "Polycystic kidney disease"},
+    {"code": "http://snomed.info/id/74400008", "display": "Appendicitis"},
+    {"code": "http://snomed.info/id/473392002", "display": "Hypertensive nephrosclerosis"},
+    {"code": "http://snomed.info/id/35455006", "display": "Acute tubular necrosis"},
+    {"code": "http://snomed.info/id/770414008", "display": "Alport syndrome"},
 ]
 
 SNOMED_PHENOTYPES = [
-    {"code": "29738008", "display": "Proteinuria"},
-    {"code": "84229001", "display": "Fatigue"},
-    {"code": "2472002", "display": "Anuria"},
-    {"code": "247355005", "display": "Flank pain"},
+    {"code": "http://snomed.info/id/29738008", "display": "Proteinuria"},
+    {"code": "http://snomed.info/id/84229001", "display": "Fatigue"},
+    {"code": "http://snomed.info/id/2472002", "display": "Anuria"},
+    {"code": "http://snomed.info/id/247355005", "display": "Flank pain"},
 ]
 
 SNOMED_PROCEDURES = [
-    {"code": "708929007", "display": "Robot assisted laparoscopic partial nephrectomy"},
-    {"code": "289754003", "display": "Total nephrectomy"},
-    {"code": "80146002", "display": "Appendectomy"}
+    {"code": "http://snomed.info/id/708929007", "display": "Robot assisted laparoscopic partial nephrectomy"},
+    {"code": "http://snomed.info/id/289754003", "display": "Total nephrectomy"},
+    {"code": "http://snomed.info/id/80146002", "display": "Appendectomy"}
 ]
 SNOMED_STRUCTURES = [
-    {"code": "181414000", "display": "Entire kidney"},
-    {"code": "66754008", "display": "Appendix"}
+    {"code": "http://snomed.info/id/181414000", "display": "Entire kidney"},
+    {"code": "http://snomed.info/id/66754008", "display": "Appendix"}
 ]
 
 GENETIC_VARIANTS = [
@@ -147,8 +147,8 @@ def generate_patient(pid, now):
     patient.update({
         "lab_date": lab_dt.date().isoformat(),
         "lab_event_id": generate_event_id(),
-        "lab_process_code": "113075003",
-        "lab_process_target": "15373003",
+        "lab_process_code": "http://snomed.info/id/113075003",
+        "lab_process_target": "http://snomed.info/id/15373003",
         "lab_value": round(random.uniform(60, 150), 2),
         "lab_unit_code": SNOMED_UNITS["µmol/L"]["code"]
     })
@@ -237,7 +237,7 @@ if __name__ == "__main__":
                 "country_of_birth_code": "valueIRI",
                 "country_of_birth_display": "value",
             },
-            "model": "Country",
+            "model": "Birthplace",
         },
         "first_visit": {
             "cols": {

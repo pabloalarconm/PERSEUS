@@ -1,0 +1,72 @@
+<http://example.com/202512161507562230660_Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001013> .
+<http://example.com/202512161507562230660_Enddate> <http://semanticscience.org/resource/SIO_000300> "1998-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.com/202512161507562230660_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032> .
+<http://example.com/202512161507562230660_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization enddate: 1998-06-30" .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000068> <http://example.com/50012001_4449995521_Event> .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000068> <http://example.com/50012001_Medical_history> .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000253> <http://example.com/50012001_202512161507562230660_Organisation> .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000300> "202512161507562230660" .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000680> <http://example.com/202512161507562230660_Startdate> .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000681> <http://example.com/202512161507562230660_Enddate> .
+<http://example.com/202512161507562230660_Record> <http://semanticscience.org/resource/SIO_000687> <http://example.com/202512161507562230660_Age> .
+<http://example.com/202512161507562230660_Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001027> .
+<http://example.com/202512161507562230660_Record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/CARE-SM/#Hospitalization> .
+<http://example.com/202512161507562230660_Record> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization" .
+<http://example.com/202512161507562230660_Startdate> <http://semanticscience.org/resource/SIO_000300> "1998-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.com/202512161507562230660_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031> .
+<http://example.com/202512161507562230660_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization startdate: 1998-06-30" .
+<http://example.com/50012001_202512161507562230660_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization attribute" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Causality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Causality> <http://www.w3.org/2000/01/rdf-schema#label> "Cause of Hospitalization" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001367> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization frequency specification" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization input" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000012> .
+<http://example.com/50012001_202512161507562230660_Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "organisation where this data element was defined" .
+<http://example.com/50012001_202512161507562230660_Output> <http://semanticscience.org/resource/SIO_000221> <http://example.com/50012001_202512161507562230660_Unit> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output> <http://semanticscience.org/resource/SIO_000243> <http://example.com/50012001_202512161507562230660_Causality> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.com/50012001_202512161507562230660_Attribute> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output> <http://semanticscience.org/resource/SIO_000671> <http://example.com/50012001_202512161507562230660_Output_identifier> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization output" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Output_identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization output identifier" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000028> <http://example.com/50012001_202512161507562230660_Specific_method> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.com/50012001_202512161507562230660_Output> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.com/50012001_202512161507562230660_Input> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000291> <http://example.com/50012001_202512161507562230660_Target> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000339> <http://example.com/50012001_202512161507562230660_Protocol> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://semanticscience.org/resource/SIO_000900> <http://example.com/50012001_202512161507562230660_Frequency> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25179> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization procedure" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000272> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000090> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization protocol" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.com/50012001_202512161507562230660_Process> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Patient role" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Specific_method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C51692> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Specific_method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Target> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization target" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000074> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_202512161507562230660_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Hospitalization unit of measurement" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_4449995521_Event> <http://semanticscience.org/resource/SIO_000300> "4449995521" .
+<http://example.com/50012001_4449995521_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000088> .
+<http://example.com/50012001_Identifier> <http://semanticscience.org/resource/SIO_000020> <http://example.com/50012001_202512161507562230660_Role> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Identifier> <http://semanticscience.org/resource/SIO_000300> "50012001" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Individual> <http://semanticscience.org/resource/SIO_000228> <http://example.com/50012001_202512161507562230660_Role> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Individual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498> <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Individual> <http://www.w3.org/2000/01/rdf-schema#label> "Subject" <http://example.com/202512161507562230660_Record> .
+<http://example.com/50012001_Medical_history> <http://semanticscience.org/resource/SIO_000332> <http://example.com/50012001_Person> .
+<http://example.com/50012001_Medical_history> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010673> .
+<http://example.com/50012001_Person> <http://semanticscience.org/resource/SIO_000671> <http://example.com/50012001_Person_identifier> .
+<http://example.com/50012001_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498> .
+<http://example.com/50012001_Person_identifier> <http://semanticscience.org/resource/SIO_000300> "50012001" .
+<http://example.com/50012001_Person_identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115> .
